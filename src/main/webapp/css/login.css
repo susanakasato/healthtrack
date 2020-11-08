@@ -1,0 +1,40 @@
+body {
+	background-color: var(--color1);
+}
+
+div.login-container {
+	width: 400px;
+	min-width: 250px;
+	margin: 100px auto;
+	padding: 50px;
+	background-color: var(--color6);
+	border-radius: 60px;
+	box-shadow: var(--shadow1);
+}
+
+h1 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 2em;
+	color: var(--color1);
+	padding-bottom: 20px;
+}
+
+input.form-input {
+	margin-bottom: 30px;
+}
+
+.error {
+	color: red;
+	font-size: 0.8em;
+	text-align: right;
+	display: block;
+}
+
+a {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: var(--color5);
+	font-weight: 500;
+}

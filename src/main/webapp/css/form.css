@@ -1,0 +1,144 @@
+
+
+form {
+	width: 100%;
+	min-width: 250px;
+}
+
+div.drop-input-content {
+	display: none;
+	width: 95%;
+	margin: auto;
+	box-shadow: var(--shadow2);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size: 0.9em;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+div.drop-input-content::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+div.drop-input-content::-webkit-scrollbar-track {
+	background-color: white;
+	margin-bottom: 10px;
+	
+}
+
+div.drop-input-content::-webkit-scrollbar-thumb {
+	background-color: var(--color6);
+}
+
+div.drop-input-content.show {
+	display: block;
+}
+
+div.form-input-radio input {
+	display: none;
+}
+div.form-input-radio label {
+	color: var(--color1);
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+div.quantity-input {
+	position: relative;
+}
+
+label.unit-input {
+	position: absolute;
+	right: 1.5em;
+	top: 0.5em;
+	color: var(--color1);
+	font-size: 1em;
+}
+
+button.secondary-button:hover {
+	background-color: var(--color2);
+}
+
+table.register-table {
+	margin-bottom: 20px;
+}
+
+table.register-table thead {
+	color: var(--color5);
+	font-size: 1.2em;
+	font-weight: 500;
+	text-align: center;
+	border-bottom: solid 0.5px;
+}
+
+table.register-table thead .item-name {
+	text-align: left;
+}
+
+table.register-table th {
+	padding: 5px;
+}
+
+table.register-table .item-name{
+	width: 50%
+}
+
+table.register-table .item-qty {
+	width: 15%;
+}
+
+table.register-table .item-total {
+	width: 20%;
+}
+
+table.register-table td.item-qty input, table.register-table td.item-total input{
+	text-align: right;	
+}
+
+table.register-table input {
+	width: 100%;
+	border: none;
+	font-size: 1em;
+	color: var(--color1);
+	padding: 5px;
+}
+
+table.register-table tfoot {
+	border-top: solid var(--color5) 0.5px;
+}
+
+table.register-table tfoot td {
+	padding: 10px;
+	font-weight: 500;
+	color: var(--color1);
+	font-size: 1.2em;
+	text-align: right;
+}
+
+table.register-table tfoot input {
+	border: none;
+	background-color: transparent;
+	display: in;
+	
+}
+
+@media screen and (max-width: 600px) {
+	div.form-container {
+		width: 80%;
+		min-width: 350px;
+	}
+	
+	table.register-table {
+	margin-bottom: 70px;
+}
+	
+	table.register-table .item-qty,
+	table.register-table .item-unit {
+		display: none;
+	}
+}

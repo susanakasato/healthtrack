@@ -1,0 +1,266 @@
+:root {
+    --color1: #366180;
+    --color2: #B8E1FF;
+    --color3: #6BC1FF;
+    --color4: #00538E;
+    --color5: #569BCC;
+    --color6: #F2F2F2;
+    --shadow1: var(--color1) 3px 3px 10px;
+    --shadow2: var(--color1) 2px 2px 5px;
+}
+
+* {
+	font-family: 'Roboto', sans-serif !important;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--color6);
+}
+
+.fixed-position-top {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.main-container {
+	width: 50%;
+	min-width: 280px;
+	max-width: 600px;
+	margin: 200px auto 20px auto;
+}
+
+.main-large-container {
+	width: 90%;
+	min-width: 280px;
+	max-width: 900px;
+	margin: 200px auto 20px auto;
+}
+
+.title {
+	padding: 1em;
+	width: 100%;
+	background-color: var(--color1);
+}
+
+.subtitle {
+	padding: 0.8em;
+	box-shadow: var(--shadow1);
+	background-color: var(--color5);
+	width: 100%;
+}
+
+h1 {
+	font-size: 2.3em;
+	font-weight: 900;
+	color: var(--color6);
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.7em;
+	font-weight: 500;
+	color: var(--color6);
+	text-align: center;
+}
+
+h3 {
+	font-size: 1em;
+	color: var(--color6);
+	font-weight: 400;
+	text-align: left;
+	background-color: var(--color1);
+	padding: 10px;
+	margin: 20px 0 10px;
+	border-radius: 5px;
+}
+
+.top-nav, .drop-nav {
+	overflow: hidden;
+	background-color: var(--color1);
+}
+
+.top-nav a {
+	float: left;
+	display: block;
+	color: var(--color6);
+	text-align: left;
+	padding: 0.8em;
+	text-decoration: none;
+	font-size: 1.3em;
+	font-weight: 500;
+	border-radius: 10px;
+	transition: background 0.2s;
+}
+
+.top-nav a:hover {
+	background-color: var(--color5);
+}
+
+.top-nav div.quick-nav {
+	display: none;
+}
+
+.top-nav.show-nav div.drop-nav {
+	display: block;
+}
+
+.top-nav div.drop-item {
+	overflow: hidden;
+	float: left;
+}
+
+.top-nav a.drop-button {
+	float: none;
+	transition: background 0.2s;
+}
+
+.top-nav div.drop-content {
+	position: absolute;
+	z-index: 1;
+	background-color: var(--color5);
+	display: none;
+	border-radius: 10px;
+	border: solid var(--color1) 1px;
+	box-shadow: var(--shadow1);
+	transition: display 0.2s;
+}
+
+.top-nav div.drop-content a {
+	float: none;
+	display: block;
+	font-size: 1.1em;
+	border-radius: 10px;
+}
+
+.top-nav div.drop-content a:hover {
+	background-color: var(--color2);
+	color: var(--color1);
+}
+
+.top-nav div.drop-item:hover a.drop-button {
+	background-color: var(--color5);
+}
+
+.top-nav div.drop-item:hover div.drop-content {
+	display: block;
+}
+
+img.icon {
+	margin: 0 10px;
+}
+
+button.primary-button {
+	background-color: var(--color1);
+	color: var(--color6);
+	display: block;
+	width: 40%;
+	margin-top: 20px;
+	margin-left: 60%;
+	padding: 8px;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	box-shadow: var(--shadow1);
+	font-size: 1.3em;
+	cursor: pointer;
+	transition: background-color 0.2s;	
+}
+
+
+button.secondary-button {
+	background-color: var(--color3);
+	color: var(--color1);
+	display: block;
+	width: 40%;
+	margin-top: 20px;
+	margin-left: 60%;
+	padding: 5px;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	box-shadow: var(--shadow1);
+	font-size: 1.1em;
+	cursor: pointer;
+	transition: background-color 0.2s;	
+}
+
+hr {
+	border: solid var(--color5) 1px;
+	background-color: var(--color5);
+	border-radius: 2px;
+	margin: 20px -20px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.form-input {
+	background-color: white;
+	color: var(--color1);
+	display: block;
+	font-size: 1.2em;
+	text-align: center;
+	width: 100%;
+	margin: 10px auto 0 auto;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	box-shadow: var(--shadow2);
+}
+
+.form-input::placeholder {
+	color: var(--color1);
+}
+
+@media screen and (max-width: 600px) {
+	.top-nav div.quick-nav {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	.top-nav div.drop-nav {
+		display: none;
+		position: absolute;
+		width: 100%;
+		-index: 10;
+	}
+	
+	.top-nav div.drop-nav a, .top-nav div.drop-nav div.drop-item {
+		float: none;
+	}
+	
+	.top-nav div.drop-content {
+		position: relative;
+	}
+	
+	button.primary-button {
+		width: 100%;
+		border-radius: 0;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		z-index: 10;
+	}
+	
+	div.chart-container {
+		height: 200px !important;
+	}
+}
+
+
+div.chart-container {
+	width: 100%;
+	height: 300px;
+}
+
+
+

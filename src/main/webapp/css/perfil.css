@@ -1,0 +1,33 @@
+img.avatar {
+	display: block;
+	margin: 10px auto 20px;
+}
+
+.hidden {
+	display: none !important;
+}
+
+label {
+	font-size: 1.1em;
+	color: var(--color4);
+	font-weight: 600;
+	padding-left: 10px;
+	padding-top: 30px;
+	display: block;
+}
+
+hr {
+	margin: 10px 0;
+}
+
+.form-input.show {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+@media screen and (max-width: 600px){
+	.form-input.show#plano,
+	.form-input#nova-senha-confirmacao {
+		margin-bottom: 100px;
+	}
+}

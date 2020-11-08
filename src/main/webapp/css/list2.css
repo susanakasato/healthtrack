@@ -1,0 +1,45 @@
+form.filter-form {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+ form.filter-form input {
+	width: 280px;
+	margin-top: 0;
+}
+
+table.list-table {
+	width: 100%;
+	margin: 20px 0;
+}
+
+table.list-table thead th {
+	font-weight: 500;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: var(--color1);
+	color: var(--color6);
+	padding: 5px;
+}
+
+table.list-table tbody tr {
+	border-bottom: solid var(--color1) 1px;
+}
+
+table.list-table td {
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table.list-table .date {
+	text-align: left;
+}
+
+table.list-table .action a {
+	margin: 0 10px;
+}
+
+table.list-table .item {
+	text-align: left;
+}
