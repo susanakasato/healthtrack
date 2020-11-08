@@ -26,19 +26,11 @@
         		<div class="drop-input-content">
         			<div class="form-input-radio">
         				<input name="unidade" type="radio" value="3" id="radio1">
-        				<label for="radio1">cal/g</label>
+        				<label for="radio1">cal/h</label>
         			</div>
         			<div class="form-input-radio">
         				<input name="unidade" type="radio" value="2" id="radio2">
-        				<label for="radio2">cal/lata</label>
-        			</div>
-        			<div class="form-input-radio">
-        				<input name="unidade" type="radio" value="1" id="radio3">
-        				<label for="radio3">cal/ml</label>
-        			</div>
-        			<div class="form-input-radio">
-        				<input name="unidade" type="radio" value="4" id="radio4">
-        				<label for="radio4">cal/un</label>
+        				<label for="radio2">cal/min</label>
         			</div>
         		</div>
         		<button class="primary-button" type="submit">Salvar</button>
